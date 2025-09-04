@@ -48,7 +48,7 @@ I am changing something for better
 1st 
 Generating a SSH key
 
-$ ssh-keygen -t rsa -b 4096 -C "vijayprat5@gmail.com"
+$ ssh-keygen -t rsa -b 4096 -C "example@gmail.com"
 
 -t rsa = type of encryption
 -b 4096 = strength of encryption
