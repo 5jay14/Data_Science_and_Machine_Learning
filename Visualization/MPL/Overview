@@ -1,0 +1,5 @@
+# Matplotlib is the most popular plotting library for python. It gives control over aspect of the figure
+# figure = graph, chart
+# It is an excellent 2d and 3d graphics library for generating scientific figures
+
+import matplotlib as mp

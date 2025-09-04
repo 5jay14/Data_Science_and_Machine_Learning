@@ -1,0 +1,10 @@
+The medical insurance company requires me to build a automatic system that predicts medical insurance cost for a given person
+Assumption is that this is US data set and the amount is in $
+
+Work flow
+1. Collect Histroical insurance data
+2. EDA
+3. Data pre processing
+4. Train/Test split
+5. Train the model and test it on unseen test data & Evaluate the metrics
+6. Deploy

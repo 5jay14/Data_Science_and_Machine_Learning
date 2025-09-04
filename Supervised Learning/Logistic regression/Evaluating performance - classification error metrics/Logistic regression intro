@@ -1,0 +1,81 @@
+Supervised learning algos are trained using labeled examples such as input where the desired output is known
+Classifying the data based on the labels
+For ex: a segment of text could have a category label such as
+Spam vs legitimate Emails
+Positive vs Negative review
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+Clearly explained - https://www.evidentlyai.com/classification-metrics/explain-roc-curve
+
+It is used commonly in applications where historical data predicts the likely future events
+
+Steps:
+1. Data acquisition - Any data
+2. Data cleaning
+3. Split data into Test and Training data
+4. Model Training and Building - Use Training data on the network to build the model
+5. Model testing: Run the test data though the model and compare the models predictions to the actual labels
+   that the test data had
+6. Adjust model parameters to meet the satisfaction
+7. After ML process is complete, we will use performance metrics to evaluate how our model did
+
+Module Evaluation:Module can only achieve either right or incorrect predictions in any of the classifications listed
+below
+In the real world, right or incorrect metric wont tell the complete story.
+
+1.Accuracy:
+2.Recall:
+3.Precision
+4.F1-Score
+
+1.Accuracy:
+Number of correct predictions by the model divided by total number of predictions
+How often is the model correct?
+TP+TN/Total
+TP+TN
+______
+TP+TN+FP+FN
+
+Accuracy Paradox: Accuracy is useful when target classes are well balanced. Same number of Cat and Dog images
+Accuracy is not useful for Imbalanced data. Example: if we had 99 cat images and 1 dog image. If the model was
+simply a line and always predicted cat, we would get 99% accuracy
+High Accuracy does not mean that model does a good job in the real world even if the accuracy is 99%
+
+
+2.Recall:
+Ability of a model to find all the relevant cases within dataset
+
+TP/Total actual positives
+
+When it actually is a positive case, how often is it correct?
+
+
+
+3.Precision:
+Ability of a model to only identify the relevant data points
+Precision expresses the proportion of the data points our model says was relevant actually were relevant
+Number of true positives divided by the number of (true positives + false positives)
+
+4.F1-Score:
+Combination of Recall and Precision
+It is the harmonic mean of P an R taking both metrics into account in the following equation
+
+f1 = 2 * ((p * r)
+        /
+         (p+r))
+
+using this logic instead of simple average
+a classifier with a precision of 1.0 and recall of 0.0 has a simple average of 0.5 but an f1 score of 0
+
+simple average = 1+0/2
+f1 = 2 * ((1*0) / (1+0))
+
+
+confusion matrix: It represents the module prediction in a matrix form. refer the images
+Based on the confusion matrix, we can derive so many metrics
+confusion matrix and the various calculated metrics Fundamentally are ways of comparing the predicted values
+versus the true values
+
+what constitute a good metric depends on the situation
+
+
+
